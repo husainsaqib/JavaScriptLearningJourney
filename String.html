@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>String</label><br>
+    <input type="text" id="input" placeholder="enter string">
+     <button onclick="check()">Submit</button>
+    <p id="one">
+
+    </p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <script>
+        function check(){
+        var y=document.getElementById("input").value;
+        var t=y.length;
+        document.getElementById("one").innerHTML=t;
+        var z=y.toLowerCase();
+        document.getElementById("two").innerHTML=z;
+        var e=y.slice(0,4);
+        document.getElementById("three").innerHTML=e;
+        }
+
+    </script>
+</body>
+</html>

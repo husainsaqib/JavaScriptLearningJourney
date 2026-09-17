@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+</head>
+<body>
+    <form>
+        <label>Number 1</label><input type="text" name="num1" id="num1" placeholder="Enter first number"><br><br>
+        <label>Number 2</label><input type="text" name="num2" id="num2" placeholder="Enter second number"><br><br>
+        <input type="button" value="Submit" onclick="calculateSum()">
+    </form>
+    <script>
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            alert("The sum is: " + sum);
+        }
+    </script>
+</body>
+</html>
