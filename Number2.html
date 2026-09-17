@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Number 1</label><input type="number" id="n1" placeholder="Enter first number"><br>
+    <label>Number 2</label><input type="number" id="n2" placeholder="Enter second number"><br>
+    <input type="button" value="Submit" onclick="check()">
+    <p id="one"></p>
+
+    <p id="two"></p>
+    <script>
+        function check(){
+            var x=parseFloat(document.getElementById("n1").value);
+            var y=parseFloat(document.getElementById("n2").value);
+            var z=x+y;
+            if(x===50){
+                document.getElementById("one").innerHTML="First number is 50";
+        }
+            else if(y===50){
+                document.getElementById("one").innerHTML="Second number is 50";
+            }
+            else if(z===50){
+                document.getElementById("one").innerHTML="50 is the sum of both numbers";
+            }else{
+                document.getElementById("one").innerHTML="none of the numbers is 50";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>>

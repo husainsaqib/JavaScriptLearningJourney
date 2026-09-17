@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input</title>
+</head>
+<body>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+     <button onclick="check()">Submit</button>
+    <p id="one"></p>
+    <script>
+        function check() {
+            var number = document.getElementById("numberInput").value;
+            var x=isNaN(number);
+            document.getElementById("one").innerHTML=x;
+
+
+        }
+    </script>
+</body>
+</html>

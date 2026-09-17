@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body>
+    <form>
+        
+        <label>Number</label><br>
+        <input type="number" id="n2" pattern="[0-10]" placeholder="Enter number"><br>
+        <button type="button" onclick="checkNumbers()">Check</button>
+       
+       
+    </form>
+     <script>
+            function checkNumbers() {
+                var num1 = parseInt(document.getElementById("n2").value);
+                if(num1>10 || num1<0){
+                    alert("Please enter a number between 0 and 10.");
+                } else {
+                   alert("input is ok");
+                }
+              
+            }
+        </script>
+</body>
+</html>
