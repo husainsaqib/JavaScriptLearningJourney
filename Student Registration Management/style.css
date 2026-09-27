@@ -151,6 +151,7 @@ button:hover{
 .success{
 
     color:green;
+    text-align:center;
 }
 
 .error{

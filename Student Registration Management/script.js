@@ -76,7 +76,7 @@ function validateForm() {
 
     // Success Message
     message.className = "success";
-    message.innerHTML = "Registration Successful!";
+    message.innerHTML = `Registration Successful! Welcome, ${name}.`;
 
     document.getElementById("registrationForm").reset();
 }
@@ -87,3 +87,7 @@ function showError(text) {
     message.className = "error";
     message.innerHTML = text;
 }
+document.getElementById("registrationForm").addEventListener("submit", function(e) {
+    e.preventDefault();   // Stops page refresh
+    validateForm();
+});
